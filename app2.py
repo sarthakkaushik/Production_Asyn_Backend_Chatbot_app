@@ -29,7 +29,7 @@ from Chatbotflow import Chatbotflow
 load_dotenv()
 
 DEFAULT_DATABASE_URL = "postgresql+psycopg://postgres:admin@localhost:5432/postgres"
-TARGET_DATABASE_URL = "postgresql+psycopg://postgres:admin@localhost:5432/user_session_db"
+TARGET_DATABASE_URL = "postgresql+psycopg://postgres:admin@localhost:5432/threads_db"
 
 default_engine = create_engine(DEFAULT_DATABASE_URL, future=True)
 target_engine = create_engine(TARGET_DATABASE_URL, future=True)
@@ -169,4 +169,4 @@ async def ask_question(
 # Run the application if executed as the main script
 if __name__ == '__main__':
     import uvicorn  # Import Uvicorn server for running the FastAPI app
-    uvicorn.run(app, host='127.0.0.1', port=8000)  # Start the app on localhost with port 8000
+    uvicorn.run(app, host='127.0.0.1', port=8001)  # Start the app on localhost with port 8000

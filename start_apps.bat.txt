@@ -1,0 +1,14 @@
+# start_apps.bat
+@echo off
+
+REM Start FastAPI backend
+start cmd /k "cd /d C:\Users\sarthak kaushik\OneDrive\Desktop\Project_Office\Prod_test && poetry shell && uvicorn app:app --host 127.0.0.1 --port 8000"
+
+REM Start Streamlit frontend
+start cmd /k "cd /d C:\Users\sarthak kaushik\OneDrive\Desktop\Project_Office\Prod_test && poetry shell && streamlit run streamlit_app.py --server.port 8501"
+
+REM Start Nginx
+start cmd /k "cd /d C:\nginx && .\nginx.exe"
+
+echo All applications have been started!
+pause

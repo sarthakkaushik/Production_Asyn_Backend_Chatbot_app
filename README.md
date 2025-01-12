@@ -2,6 +2,11 @@
 
 A production-ready chatbot application built with FastAPI, LangGraph, and Streamlit, featuring PostgreSQL for conversation history storage.
 
+## Files to consider
+-- Backend - Fatapi- app3.py
+-- Frontend -Streamlit- Streamlit_app.py
+
+
 ## Features
 
 - Real-time chat interface with Streamlit
